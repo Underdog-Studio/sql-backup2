@@ -2,7 +2,8 @@
   "name": "sql-backup",
   "version": "1.0.0",
   "description": "数据库备份模块",
-  "main": "app.js",
+  "main": "dist/app.js",
+  "type": "module",
   "scripts": {
     "test": "node app.js"
   },
@@ -11,11 +12,17 @@
   "dependencies": {
     "ali-oss": "^6.8.0",
     "colors": "^1.4.0",
+    "dayjs": "^1.11.7",
     "fs-extra": "^9.0.0",
     "make-dir": "^3.1.0",
-    "moment": "^2.26.0",
     "mysql2": "^2.1.0",
+    "mysqldump": "^3.2.0",
     "node-cron": "^2.0.3",
     "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.19",
+    "@types/node-cron": "^3.0.7",
+    "typescript": "^4.9.5"
   }
 }
